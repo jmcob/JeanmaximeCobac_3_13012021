@@ -3,6 +3,8 @@
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
+$shadow: lightgrey;
+$main_margin: 5vw;
 
 * {
   box-sizing: border-box ;
@@ -13,10 +15,10 @@ body {
   margin: 0px;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
-  box-shadow: 0 2px grey;
+  box-shadow: 2px 2px 2px red;
   margin: 0px;
   & img{
     padding-bottom: 0px;
@@ -27,46 +29,59 @@ header {
   }
 }
 .section_location {
+  padding: 0 5vw;
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
 }
 
-.section_reserve {
+.section_presentation {
+  padding: 0 $main_margin;
   display: flex;
   flex-flow: wrap column;
-  align-items: center;
+  align-content: center;
   background: linear-gradient(white, #eaeaea);
+  &__h3 {
+    font-weight: lighter;
+  }
 }
 .btn {
   background: linear-gradient(170deg, $secondary, $primary);
   color: white;
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 50px;
   border: none;
+  margin-bottom: 7vw;
+  box-shadow: 4px 4px 2px $shadow;
 }
 .section_operation {
+  padding: 0 $main_margin 5vw $main_margin;
   &__steps {
     background-color: #f6f6f6;
     margin: 1rem;
+    padding: 1rem;
+    box-shadow: 4px 4px 2px $shadow;
+    border-radius: 20px 20px;
   }
 }
 
 .section_restaurants {
+  padding: 0 $main_margin;
   background-color: #f6f6f6;
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
-  // &__title {
-  //   text-align: start;
-  // }
+  &__title {
+    align-self: start;
+  }
   &__card {
     height: 150px;
     flex: 100%;
-    margin: 5vw;
+    margin: 3vw 0px;
     background-color: white;
     border-radius: 20px 20px;
+    box-shadow: 2px 2px 2px $shadow;
     & img {
       object-fit: cover;
       height: 150px;
@@ -75,8 +90,18 @@ header {
       border-top-right-radius: 20px 20px;
     }
     &__caption {
+      padding: 0 1rem;
       border-bottom-left-radius: 20px 20px;
       border-bottom-right-radius: 20px 20px;
+      & p {
+        font-weight: lighter;
+        margin-top: 0.2rem;
+        margin-bottom: 0.6rem;
+      }
+      & h3 {
+        margin-top: 0.6rem;
+        margin-bottom: 0.2rem;
+      }
     }
   }
 }
@@ -84,7 +109,7 @@ header {
 .footer {
   background-color: #353535;
   color: white;
-  padding: 5vw;
+  padding: $main_margin;
   &_h4 {
     font-family: shrikhand, curisve;
     font-size: larger;
