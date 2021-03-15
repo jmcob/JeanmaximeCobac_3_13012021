@@ -50,10 +50,10 @@ body {
   box-shadow: 4px 4px 2px lightgrey;
 }
 
-.section_operation {
+.section_steps {
   padding: 0 5vw 5vw 5vw;
 }
-.section_operation__steps {
+.section_steps__btn {
   background-color: #f6f6f6;
   margin: 1rem;
   padding: 1rem;

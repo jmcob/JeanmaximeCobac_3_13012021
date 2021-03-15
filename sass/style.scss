@@ -1,11 +1,14 @@
+// font import
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
 
+// color variables and main margin variable
 $primary: #9356DC;
 $secondary: #FF79DA;
 $tertiary: #99E2D0;
 $shadow: lightgrey;
 $main_margin: 5vw;
 
+// border box and font designation
 * {
   box-sizing: border-box ;
   font-family: Roboto, sans-serif;
@@ -14,7 +17,7 @@ $main_margin: 5vw;
 body {
   margin: 0px;
 }
-
+// header
 .header {
   display: flex;
   justify-content: center;
@@ -28,13 +31,14 @@ body {
     margin-top: 5px;
   }
 }
+// first section under header : location Paris
 .section_location {
   padding: 0 5vw;
   display: flex;
   justify-content: center;
   background-color: #eaeaea;
 }
-
+// 2nd section ohmyfood presentation with big button
 .section_presentation {
   padding: 0 $main_margin;
   display: flex;
@@ -54,9 +58,11 @@ body {
   margin-bottom: 7vw;
   box-shadow: 4px 4px 2px $shadow;
 }
-.section_operation {
+
+// 3rd section, steps with 3 btns
+.section_steps {
   padding: 0 $main_margin 5vw $main_margin;
-  &__steps {
+  &__btn {
     background-color: #f6f6f6;
     margin: 1rem;
     padding: 1rem;
@@ -64,7 +70,7 @@ body {
     border-radius: 20px 20px;
   }
 }
-
+// biggest section : restaurants
 .section_restaurants {
   padding: 0 $main_margin;
   background-color: #f6f6f6;
@@ -72,9 +78,11 @@ body {
   flex-flow: wrap column;
   justify-content: center;
   align-items: center;
+  //align title because of the justify content
   &__title {
     align-self: start;
   }
+  // card and img cover 
   &__card {
     height: 150px;
     flex: 100%;
@@ -89,6 +97,7 @@ body {
       border-top-left-radius: 20px 20px;
       border-top-right-radius: 20px 20px;
     }
+    // description of restaurants
     &__caption {
       padding: 0 1rem;
       border-bottom-left-radius: 20px 20px;
@@ -105,7 +114,7 @@ body {
     }
   }
 }
-
+//footer
 .footer {
   background-color: #353535;
   color: white;
