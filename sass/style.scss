@@ -1,12 +1,7 @@
 // font import
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
-
-// color variables and main margin variable
-$primary: #9356dc;
-$secondary: #ff79da;
-$tertiary: #99e2d0;
-$shadow: lightgrey;
-$main_margin: 5vw;
+@import "variables.scss";
+@import "menu.scss";
 
 // border box and font designation
 * {
@@ -55,6 +50,7 @@ body {
 .btn {
   background: linear-gradient(170deg, $secondary, $primary);
   color: white;
+  font-size: large;
   padding: 1rem;
   border-radius: 50px;
   border: none;

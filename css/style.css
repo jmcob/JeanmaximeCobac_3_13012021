@@ -46,6 +46,7 @@ body {
 .btn {
   background: linear-gradient(170deg, #ff79da, #9356dc);
   color: white;
+  font-size: large;
   padding: 1rem;
   border-radius: 50px;
   border: none;
