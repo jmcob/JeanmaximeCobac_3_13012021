@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 2px 2px 2px red;
+          box-shadow: 2px 2px 2px red;
+  margin: 0px;
+}
+
+.header img {
+  padding-bottom: 0px;
+  margin-bottom: -15px;
+}
+
+.header h1 {
+  margin-top: 5px;
+}
+
+.section_location {
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eaeaea;
+}
+
+.section_presentation {
+  padding: 0 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap column;
+          flex-flow: wrap column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#eaeaea));
+  background: linear-gradient(white, #eaeaea);
+}
+
+.section_presentation h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section_presentation__h3 {
+  font-weight: lighter;
+}
+
+.btn {
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 7vw;
+  -webkit-box-shadow: 4px 4px 2px lightgrey;
+          box-shadow: 4px 4px 2px lightgrey;
+}
+
+.section_steps {
+  padding: 0 5vw 5vw 5vw;
+}
+
+.section_steps__btn {
+  background-color: #f6f6f6;
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-box-shadow: 4px 4px 2px lightgrey;
+          box-shadow: 4px 4px 2px lightgrey;
+  border-radius: 20px 20px;
+}
+
+.section_restaurants {
+  padding: 0 5vw;
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap column;
+          flex-flow: wrap column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section_restaurants__title {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.section_restaurants__card {
+  height: 150px;
+  -webkit-box-flex: 100%;
+      -ms-flex: 100%;
+          flex: 100%;
+  margin: 3vw 0px;
+  background-color: white;
+  border-radius: 20px 20px;
+  -webkit-box-shadow: 2px 2px 2px lightgrey;
+          box-shadow: 2px 2px 2px lightgrey;
+}
+
+.section_restaurants__card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+}
+
+.section_restaurants__card__caption {
+  padding: 0 1rem;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+}
+
+.section_restaurants__card__caption p {
+  font-weight: lighter;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.section_restaurants__card__caption h3 {
+  margin-top: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 5vw;
+}
+
+.footer_h4 {
+  font-family: shrikhand, curisve;
+  font-size: larger;
+  margin-top: 0px;
+}
+/*# sourceMappingURL=style.css.map */

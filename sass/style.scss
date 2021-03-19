@@ -1,16 +1,16 @@
 // font import
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 
 // color variables and main margin variable
-$primary: #9356DC;
-$secondary: #FF79DA;
-$tertiary: #99E2D0;
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
 $shadow: lightgrey;
 $main_margin: 5vw;
 
 // border box and font designation
 * {
-  box-sizing: border-box ;
+  box-sizing: border-box;
   font-family: Roboto, sans-serif;
 }
 
@@ -21,13 +21,13 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  box-shadow: 2px 2px 2px red;
-  margin: 0px;
-  & img{
+  box-shadow: 0px 5px 5px $shadow;
+  margin-bottom: 5px;
+  & img {
     padding-bottom: 0px;
     margin-bottom: -15px;
   }
-  & h1{
+  & h1 {
     margin-top: 5px;
   }
 }
@@ -43,8 +43,11 @@ body {
   padding: 0 $main_margin;
   display: flex;
   flex-flow: wrap column;
-  align-content: center;
+  align-items: center;
   background: linear-gradient(white, #eaeaea);
+  & h2 {
+    align-self: center;
+  }
   &__h3 {
     font-weight: lighter;
   }
@@ -82,7 +85,7 @@ body {
   &__title {
     align-self: start;
   }
-  // card and img cover 
+  // card and img cover
   &__card {
     height: 150px;
     flex: 100%;

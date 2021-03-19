@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "OpenClassRooms projet 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "sass --watch sass/style.scss:css/style.css",
+    "sass":  "sass --watch sass/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmcob/ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmcob/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/jmcob/ohmyfood#readme"
+}
+
