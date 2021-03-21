@@ -1,0 +1,15 @@
+body {
+  background-color: #f6f6f6;
+}
+
+.menu {
+  &__title h1 {
+    font-family: shrikhand, cursive;
+    font-size: xx-large;
+  }
+}
+
+.card {
+  @include cardppty;
+  margin: 1rem;
+}

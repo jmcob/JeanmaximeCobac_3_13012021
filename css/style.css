@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+body {
+  background-color: #f6f6f6;
+}
+
+.menu__title h1 {
+  font-family: shrikhand, cursive;
+  font-size: xx-large;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 20px 20px;
+  margin: 1rem;
+}
+
 * {
   box-sizing: border-box;
   font-family: Roboto, sans-serif;
@@ -81,8 +97,9 @@ body {
   flex: 100%;
   margin: 3vw 0px;
   background-color: white;
-  border-radius: 20px 20px;
+  background-color: white;
   box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 20px 20px;
 }
 .section_restaurants__card img {
   object-fit: cover;
@@ -112,7 +129,7 @@ body {
   padding: 5vw;
 }
 .footer_h4 {
-  font-family: shrikhand, curisve;
+  font-family: shrikhand, cursive;
   font-size: larger;
   margin-top: 0px;
 }
