@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YV55E376FZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YV55E376FZ");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Menu - ohmyfood - OpenClassRooms</title>
+    <title>Le délice des sens - ohmyfood - OpenClassRooms</title>
     <script
       src="https://kit.fontawesome.com/04b5a3f05a.js"
       crossorigin="anonymous"
@@ -19,69 +33,73 @@
         </h1>
       </div>
     </header>
-    <section class="picture">
-      <img src="" alt="" />
+    <section class="restaurant">
+      <img
+        src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        alt="Le délice des sens"
+      />
+      <div class="restaurant__name">
+        <h2>Le délice des sens</h2>
+        <i class="far fa-heart"></i>
+      </div>
     </section>
     <section class="menu">
-      <div class="menu__title">
-        <h1>Le délice des sens</h1>
-      </div>
       <article class="menu__carte_entrees">
         <div>
-          <h2>ENTRÉES</h2>
+          <h3>ENTRÉES</h3>
         </div>
-        <div class="menu__carte_entrees__entrees">
-          <h3>Tartare de thon</h3>
+        <div class="menu__carte_entrees__entrees card">
+          <h4>Tartare de thon</h4>
           <p>Assaisonné au yuzu</p>
           <p>25€</p>
         </div>
-        <div class="menu__carte_entrees__entrees">
-          <h3>Bouchée de homard croustillant</h3>
+        <div class="menu__carte_entrees__entrees card">
+          <h4>Bouchée de homard croustillant</h4>
           <p>Et sa farandole de petits légumes</p>
           <p>35€</p>
         </div>
-        <div class="menu__carte_entrees__entrees">
-          <h3>Velouté de cèpes</h3>
+        <div class="menu__carte_entrees__entrees card">
+          <h4>Velouté de cèpes</h4>
           <p>Aux truffes</p>
           <p>20€</p>
         </div>
       </article>
       <article class="menu__carte_plats">
         <div>
-          <h2>PLATS</h2>
+          <h3>PLATS</h3>
         </div>
-        <div class="menu__carte_plats__plats">
-          <h3>Poulet rôti aux herbes de Provence</h3>
+        <div class="menu__carte_plats__plats card">
+          <h4>Poulet rôti aux herbes de Provence</h4>
           <p>Et sa crème de truffe</p>
           <p>40€</p>
         </div>
-        <div class="menu__carte_plats__plats">
-          <h3>Langouste rôtie</h3>
+        <div class="menu__carte_plats__plats card">
+          <h4>Langouste rôtie</h4>
           <p>Et ses légumes de saison</p>
           <p>35€</p>
         </div>
-        <div class="menu__carte_plats__plats">
-          <h3>Côte de boeuf Angus</h3>
+        <div class="menu__carte_plats__plats card">
+          <h4>Côte de boeuf Angus</h4>
           <p>Et sa purée de panais</p>
           <p>44€</p>
         </div>
       </article>
       <article class="menu__carte_desserts">
         <div>
-          <h2>DESSERTS</h2>
+          <h3>DESSERTS</h3>
         </div>
-        <div class="menu__carte_desserts__desserts">
-          <h3>Farandole de desserts</h3>
+        <div class="menu__carte_desserts__desserts card">
+          <h4>Farandole de desserts</h4>
           <p>Du chef</p>
           <p>18€</p>
         </div>
-        <div class="menu__carte_desserts__desserts">
-          <h3>Crème brulée</h3>
+        <div class="menu__carte_desserts__desserts card">
+          <h4>Crème brulée</h4>
           <p>Revisitée</p>
           <p>22€</p>
         </div>
-        <div class="menu__carte_desserts__desserts">
-          <h3>Tiramisu</h3>
+        <div class="menu__carte_desserts__desserts card">
+          <h4>Tiramisu</h4>
           <p>À la noisette</p>
           <p>23€</p>
         </div>
@@ -89,7 +107,7 @@
       <button class="btn">Commander</button>
     </section>
     <footer class="footer">
-      <h4 class="footer_h4">ohmyfood</h4>
+      <h5 class="footer_h5">ohmyfood</h5>
       <p class="footer_p">
         <i class="fas fa-utensils"></i>&nbsp;Proposer un restaurant
       </p>

@@ -2,16 +2,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
 @import "mixins.scss";
 @import "variables.scss";
-@import "menu.scss";
 
 // border box and font designation
 * {
   box-sizing: border-box;
-  font-family: Roboto, sans-serif;
 }
 
 body {
   margin: 0px;
+  font-family: Roboto, sans-serif;
 }
 // header
 .header {
@@ -106,7 +105,7 @@ body {
         margin-top: 0.2rem;
         margin-bottom: 0.6rem;
       }
-      & h3 {
+      & h4 {
         margin-top: 0.6rem;
         margin-bottom: 0.2rem;
       }
@@ -118,9 +117,10 @@ body {
   background-color: #353535;
   color: white;
   padding: $main_margin;
-  &_h4 {
+  &_h5 {
     font-family: shrikhand, cursive;
     font-size: larger;
     margin-top: 0px;
   }
 }
+@import "menu.scss";

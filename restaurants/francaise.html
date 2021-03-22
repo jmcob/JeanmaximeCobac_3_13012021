@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YV55E376FZ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-YV55E376FZ");
+    </script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Menu - ohmyfood - OpenClassRooms</title>
+    <title>À la française - ohmyfood - OpenClassRooms</title>
     <script
       src="https://kit.fontawesome.com/04b5a3f05a.js"
       crossorigin="anonymous"
@@ -19,69 +33,73 @@
         </h1>
       </div>
     </header>
-    <section class="picture">
-      <img src="" alt="" />
+    <section class="restaurant">
+      <img
+        src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="À la française"
+      />
+      <div class="restaurant__name">
+        <h2>À la française</h2>
+        <i class="far fa-heart"></i>
+      </div>
     </section>
     <section class="menu">
-      <div class="menu__title">
-        <h1>À la française</h1>
-      </div>
       <article class="menu__carte_entrees">
         <div>
-          <h2>ENTRÉES</h2>
+          <h3>ENTRÉES</h3>
         </div>
-        <div class="menu__carte_entrees__entrees">
-          <h3>Tartare de poulpe acidulé</h3>
+        <div class="menu__carte_entrees__entrees card">
+          <h4>Tartare de poulpe acidulé</h4>
           <p>Aux zestes d'orange</p>
           <p>25€</p>
         </div>
-        <div class="menu__carte_entrees__entrees">
-          <h3>Velouté de légumes d'antan</h3>
+        <div class="menu__carte_entrees__entrees card">
+          <h4>Velouté de légumes d'antan</h4>
           <p>Carotte, panais, topinambour</p>
           <p>35€</p>
         </div>
-        <div class="menu__carte_entrees__entrees">
-          <h3>Soupe à l'oignon</h3>
+        <div class="menu__carte_entrees__entrees card">
+          <h4>Soupe à l'oignon</h4>
           <p>Revisitée</p>
           <p>20€</p>
         </div>
       </article>
       <article class="menu__carte_plats">
         <div>
-          <h2>PLATS</h2>
+          <h3>PLATS</h3>
         </div>
-        <div class="menu__carte_plats__plats">
-          <h3>Coquilles Saint-Jacques</h3>
+        <div class="menu__carte_plats__plats card">
+          <h4>Coquilles Saint-Jacques</h4>
           <p>Accompagnées d'une purée de panais</p>
           <p>40€</p>
         </div>
-        <div class="menu__carte_plats__plats">
-          <h3>Magret de canard</h3>
+        <div class="menu__carte_plats__plats card">
+          <h4>Magret de canard</h4>
           <p>Et parmentier de pommes de terre</p>
           <p>35€</p>
         </div>
-        <div class="menu__carte_plats__plats">
-          <h3>Pigeonneau d’Ille-et-Vilaine</h3>
+        <div class="menu__carte_plats__plats card">
+          <h4>Pigeonneau d’Ille-et-Vilaine</h4>
           <p>Sur son lit de gnocchis aux légumes</p>
           <p>44€</p>
         </div>
       </article>
       <article class="menu__carte_desserts">
         <div>
-          <h2>DESSERTS</h2>
+          <h3>DESSERTS</h3>
         </div>
-        <div class="menu__carte_desserts__desserts">
-          <h3>Pétales de violettes glacés</h3>
+        <div class="menu__carte_desserts__desserts card">
+          <h4>Pétales de violettes glacés</h4>
           <p>Et purée de noisettes</p>
           <p>18€</p>
         </div>
-        <div class="menu__carte_desserts__desserts">
-          <h3>Fondant au chocolat</h3>
+        <div class="menu__carte_desserts__desserts card">
+          <h4>Fondant au chocolat</h4>
           <p>Revisité</p>
           <p>22€</p>
         </div>
-        <div class="menu__carte_desserts__desserts">
-          <h3>Millefeuille croustillant</h3>
+        <div class="menu__carte_desserts__desserts card">
+          <h4>Millefeuille croustillant</h4>
           <p>Myrtilles et pâte d’amande</p>
           <p>23€</p>
         </div>
@@ -89,7 +107,7 @@
       <button class="btn">Commander</button>
     </section>
     <footer class="footer">
-      <h4 class="footer_h4">ohmyfood</h4>
+      <h5 class="footer_h5">ohmyfood</h5>
       <p class="footer_p">
         <i class="fas fa-utensils"></i>&nbsp;Proposer un restaurant
       </p>
