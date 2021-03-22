@@ -4,7 +4,6 @@
   "description": "OpenClassRooms projet 3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass":  "sass --watch sass/style.scss:css/style.css"
   },
   "repository": {
