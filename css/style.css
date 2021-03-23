@@ -1,4 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+body {
+  background-color: #f6f6f6;
+}
+
+.fa-arrow-left {
+  position: relative;
+  top: 20px;
+  right: 45px;
+  font-size: x-large;
+}
+
+.restaurant img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant__name {
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+  transform: translateY(-80px);
+  margin-bottom: -80px;
+  padding: 5px 15px;
+  background-color: #f6f6f6;
+  font-family: shrikhand, cursive;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-heart {
+  font-size: xx-large;
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu h3 {
+  padding-bottom: 0px;
+  margin: 0 0 0.25rem 0.5rem;
+}
+.menu h4, .menu p {
+  padding: 0.25rem 0.75rem;
+}
+.menu h4 {
+  margin-bottom: 0px;
+  font-size: larger;
+}
+.menu p {
+  margin-bottom: 5px;
+}
+
+.underline-h3 {
+  width: 40px;
+  height: 0.25em;
+  background-color: #99e2d0;
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5em;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 20px 20px;
+  margin: 1rem;
+}
+.card__description {
+  display: flex;
+  flex-direction: wrap;
+  justify-content: space-between;
+}
+.card__description__price {
+  font-weight: bold;
+}
+.card__description p {
+  margin-top: 2px;
+}
+
+.btn {
+  width: 200px;
+  align-self: center;
+  margin: 2rem;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -116,63 +204,6 @@ body {
   font-family: shrikhand, cursive;
   font-size: larger;
   margin-top: 0px;
-}
-
-body {
-  background-color: #f6f6f6;
-}
-
-.fa-arrow-left {
-  position: relative;
-  top: 20px;
-  right: 45px;
-  font-size: x-large;
-}
-
-.restaurant__name {
-  border-top-left-radius: 40px 40px;
-  border-top-right-radius: 40px 40px;
-  position: relative;
-  bottom: 80px;
-  padding: 5px 15px;
-  background-color: #f6f6f6;
-  font-family: shrikhand, cursive;
-  font-size: large;
-  display: flex;
-  flex-direction: row;
-}
-.restaurant img {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
-}
-
-.fa-heart {
-  font-size: xx-large;
-  position: relative;
-  top: 20px;
-  left: 50px;
-}
-
-.menu h3 {
-  padding-bottom: 0px;
-  margin: 0 0 0.25em 0.5em;
-}
-
-.underline-h3 {
-  width: 40px;
-  height: 0.25em;
-  background-color: #99e2d0;
-  margin: 0;
-  padding: 0;
-  margin-left: 0.5em;
-}
-
-.card {
-  background-color: white;
-  box-shadow: 2px 2px 2px lightgrey;
-  border-radius: 20px 20px;
-  margin: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */

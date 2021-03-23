@@ -9,24 +9,24 @@ body {
   font-size: x-large;
 }
 
-// top of the page under header
+// top of the page under header // first image, 2nd title et font awesome icon
 .restaurant {
+  & img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
   &__name {
     border-top-left-radius: 40px 40px;
     border-top-right-radius: 40px 40px;
-    position: relative;
-    bottom: 80px;
+    transform: translateY(-80px);
+    margin-bottom: -80px;
     padding: 5px 15px;
     background-color: $bg;
     font-family: shrikhand, cursive;
     font-size: large;
     display: flex;
     flex-direction: row;
-  }
-  & img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
   }
 }
 .fa-heart {
@@ -40,8 +40,21 @@ body {
 .menu {
   & h3 {
     padding-bottom: 0px;
-    margin: 0 0 0.25em 0.5em;
+    margin: 0 0 0.25rem 0.5rem;
   }
+  & h4,
+  & p {
+    padding: 0.25rem 0.75rem;
+  }
+  & h4 {
+    margin-bottom: 0px;
+    font-size: larger;
+  }
+  & p {
+    margin-bottom: 5px;
+  }
+  display: flex;
+  flex-direction: column;
 }
 .underline-h3 {
   width: 40px;
@@ -55,4 +68,21 @@ body {
 .card {
   @include cardppty;
   margin: 1rem;
+  &__description {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    &__price {
+      font-weight: bold;
+    }
+    & p {
+      margin-top: 2px;
+    }
+  }
+}
+
+.btn {
+  width: 200px;
+  align-self: center;
+  margin: 2rem;
 }
