@@ -20,31 +20,32 @@ body {
   border-top-right-radius: 40px 40px;
   transform: translateY(-80px);
   margin-bottom: -80px;
-  padding: 5px 15px;
+  padding: 5px 5vw;
   background-color: #f6f6f6;
   font-family: shrikhand, cursive;
   font-size: large;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .fa-heart {
   font-size: xx-large;
   position: relative;
   top: 20px;
-  left: 50px;
 }
 
 .menu {
   display: flex;
   flex-direction: column;
+  padding: 0 0vw;
 }
 .menu h3 {
   padding-bottom: 0px;
-  margin: 0 0 0.25rem 0.5rem;
+  margin: 0 5vw;
 }
 .menu h4, .menu p {
-  padding: 0.25rem 0.75rem;
+  padding: 0.25rem 5vw;
 }
 .menu h4 {
   margin-bottom: 0px;
@@ -60,7 +61,7 @@ body {
   background-color: #99e2d0;
   margin: 0;
   padding: 0;
-  margin-left: 0.5em;
+  margin-left: 5vw;
 }
 
 .card {

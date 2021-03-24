@@ -73,7 +73,7 @@ body {
 // biggest section : restaurants
 .section_restaurants {
   padding: 0 $main_margin;
-  background-color: #f6f6f6;
+  background-color: $bg;
   display: flex;
   flex-flow: wrap column;
   justify-content: center;
