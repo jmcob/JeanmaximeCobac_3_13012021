@@ -34,6 +34,9 @@ body {
   font-size: xx-large;
   position: relative;
   top: 20px;
+  &:hover {
+    color: $primary;
+  }
 }
 
 //menu section
@@ -48,6 +51,7 @@ body {
   }
   & h4 {
     margin-bottom: 0px;
+    margin-top: 0px;
     font-size: larger;
   }
   & p {
@@ -69,15 +73,40 @@ body {
 .card {
   @include cardppty;
   margin: 1rem;
-  &__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__text {
     display: flex;
-    flex-direction: wrap;
-    justify-content: space-between;
-    &__price {
-      font-weight: bold;
+    flex-direction: column;
+    &__description {
+      flex: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &__price {
+        font-weight: bold;
+      }
+      & p {
+        margin-top: 2px;
+      }
     }
-    & p {
-      margin-top: 2px;
+  }
+  &__check {
+    // display: none;
+    width: 100px;
+    color: white;
+    background-color: $tertiary;
+    font-size: xx-large;
+    text-align: center;
+    // vertical-align: middle;
+    border-top-right-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    &:hover {
+      border: 5px solid $tertiary;
+      transform: translateX(-100px);
+      transition: all 50ms;
+      cursor: pointer;
     }
   }
 }
