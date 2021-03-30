@@ -83,11 +83,11 @@ body {
 }
 .card__text {
   display: flex;
+  white-space: nowrap;
+  /* interdiction de passer à la ligne */
   flex-direction: column;
 }
 .card__text__description {
-  white-space: nowrap;
-  /* interdiction de passer à la ligne */
   flex: 100%;
   display: flex;
   flex-direction: row;
@@ -115,13 +115,21 @@ body {
   border-bottom-right-radius: 20px 20px;
   transform: translateX(100px);
   cursor: pointer;
-  transition: transform 1000ms;
+  transition: transform 700ms;
 }
 .card:hover > .card__check {
   transform: translateX(0px);
   background-color: #99e2d0;
   cursor: pointer;
   color: #f6f6f6;
+}
+.card:hover .fa-check-circle {
+  transform: rotate(0deg);
+}
+
+.fa-check-circle {
+  transform: rotate(359deg);
+  transition: transform 700ms;
 }
 
 .btn {
