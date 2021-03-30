@@ -76,10 +76,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: all 2000ms;
+  cursor: pointer;
+  overflow: hidden;
   &__text {
     display: flex;
     flex-direction: column;
     &__description {
+      white-space: nowrap; /* interdiction de passer à la ligne */
       flex: 100%;
       display: flex;
       flex-direction: row;
@@ -93,21 +97,27 @@ body {
     }
   }
   &__check {
-    // display: none;
     width: 100px;
-    color: white;
+    color: $bg;
     background-color: $tertiary;
     font-size: xx-large;
     text-align: center;
-    // vertical-align: middle;
+    // centrer verticalement sur une ligne:
+    height: 2.1em; /* hauteur du parent */
+    line-height: 2.1em; /* hauteur de ligne (identique) */
+    white-space: nowrap; /* interdiction de passer à la ligne */
     border-top-right-radius: 20px 20px;
     border-bottom-right-radius: 20px 20px;
-    &:hover {
-      border: 5px solid $tertiary;
-      transform: translateX(-100px);
-      transition: all 50ms;
-      cursor: pointer;
-    }
+    transform: translateX(100px);
+    cursor: pointer;
+    transition: transform 1000ms;
+  }
+  &:hover > &__check {
+    transform: translateX(0px);
+    background-color: $tertiary;
+    cursor: pointer;
+    color: $bg;
+    // transition: all 2000ms;
   }
 }
 
