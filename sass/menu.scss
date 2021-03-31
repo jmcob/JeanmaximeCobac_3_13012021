@@ -81,6 +81,7 @@ body {
   overflow: hidden;
   &__text {
     display: flex;
+    flex: 100%;
     white-space: nowrap; /* interdiction de passer à la ligne */
     flex-direction: column;
     &__description {
@@ -97,7 +98,7 @@ body {
     }
   }
   &__check {
-    width: 100px;
+    flex: 0%;
     color: $bg;
     background-color: $tertiary;
     font-size: xx-large;
@@ -110,13 +111,17 @@ body {
     border-bottom-right-radius: 20px 20px;
     transform: translateX(100px);
     cursor: pointer;
-    transition: transform 700ms;
+    transition: transform $transitiontime;
   }
   &:hover > &__check {
+    flex: 30%;
     transform: translateX(0px);
     background-color: $tertiary;
     cursor: pointer;
     color: $bg;
+  }
+  &hover > &__text {
+    flex: 30%;
   }
   &:hover .fa-check-circle {
     transform: rotate(0deg);
@@ -124,7 +129,7 @@ body {
 }
 .fa-check-circle {
   transform: rotate(359deg);
-  transition: transform 700ms;
+  transition: transform $transitiontime;
 }
 .btn {
   width: 200px;

@@ -57,18 +57,45 @@ body {
   border: none;
   margin-bottom: 7vw;
   box-shadow: 4px 4px 2px $shadow;
+  width: 60vw;
 }
 
 // 3rd section, steps with 3 btns
 .section_steps {
   padding: 0 $main_margin 5vw $main_margin;
   &__btn {
+    display: flex;
+    flex-direction: row;
     background-color: #f6f6f6;
     margin: 1rem;
     padding: 1rem;
     box-shadow: 4px 4px 2px $shadow;
     border-radius: 20px 20px;
+    text-align: center;
+    // centrer verticalement sur une ligne:
+    height: 4rem; /* hauteur du parent */
+    line-height: 2rem; /* hauteur de ligne (identique) */
+    white-space: nowrap; /* interdiction de passer à la ligne */
+
+    &__ordered {
+      border-radius: 50%;
+      background-color: $primary;
+      color: white;
+      position: relative;
+      right: 28px;
+      padding: 2px 10px;
+      & p {
+        position: relative;
+        bottom: 17px;
+      }
+    }
   }
+}
+.primary_bg {
+  background-color: lighten($primary, 35%);
+}
+.fa-store {
+  color: $primary;
 }
 // biggest section : restaurants
 .section_restaurants {
