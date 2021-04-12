@@ -30,13 +30,21 @@ body {
     justify-content: space-between;
   }
 }
-.fa-heart {
+
+// coeur (far est vide, fas est plein)
+.hrt_empty {
   font-size: xx-large;
   position: relative;
   top: 20px;
-  &:hover {
-    color: $primary;
+  transition: all 500ms;
+  &:hover > .hrt_full {
+    color: red;
   }
+}
+.hrt_full {
+  font-size: xx-large;
+  position: relative;
+  top: 20px;
 }
 
 //menu section
@@ -79,21 +87,29 @@ body {
   transition: all 2000ms;
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
   &__text {
     display: flex;
     flex: 100%;
     white-space: nowrap; /* interdiction de passer à la ligne */
     flex-direction: column;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &__description {
       flex: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      &__price {
-        font-weight: bold;
-      }
       & p {
         margin-top: 2px;
+        overflow: hidden;
+        white-space: nowrap; /* interdiction de passer à la ligne */
+      }
+      &__ingredients {
+        text-overflow: ellipsis;
+      }
+      &__price {
+        font-weight: bold;
       }
     }
   }
@@ -114,14 +130,14 @@ body {
     transition: transform $transitiontime;
   }
   &:hover > &__check {
-    flex: 30%;
+    flex: 25%;
     transform: translateX(0px);
     background-color: $tertiary;
     cursor: pointer;
     color: $bg;
   }
-  &hover > &__text {
-    flex: 30%;
+  &:hover > &__text {
+    flex: 75%;
   }
   &:hover .fa-check-circle {
     transform: rotate(0deg);
