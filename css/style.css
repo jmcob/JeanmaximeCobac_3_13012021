@@ -30,20 +30,18 @@ body {
   justify-content: space-between;
 }
 
-.hrt_empty {
+.fa-stack {
   font-size: xx-large;
-  position: relative;
-  top: 20px;
-  transition: all 500ms;
 }
-.hrt_empty:hover > .hrt_full {
-  color: red;
-}
-
-.hrt_full {
+.fa-stack :nth-child(2) {
+  color: transparent;
   font-size: xx-large;
-  position: relative;
-  top: 20px;
+  transition: all 150ms;
+  padding: 0px;
+}
+.fa-stack :nth-child(2):hover {
+  color: #9356dc;
+  transform: scale(1.05);
 }
 
 .menu {
@@ -115,6 +113,7 @@ body {
 }
 .card__text__description__price {
   font-weight: bold;
+  transition: all 700ms;
 }
 .card__check {
   flex: 0%;

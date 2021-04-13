@@ -32,19 +32,22 @@ body {
 }
 
 // coeur (far est vide, fas est plein)
-.hrt_empty {
-  font-size: xx-large;
-  position: relative;
-  top: 20px;
-  transition: all 500ms;
-  &:hover > .hrt_full {
-    color: red;
+.fa-stack {
+  & :nth-child(2) {
+    color: transparent;
+    font-size: xx-large;
+    transition: all 150ms;
+    padding: 0px;
+    &:hover {
+      color: $primary;
+      transform: scale(1.05);
+      // background-color: linear-gradient($primary, $secondary);
+      // background-color: red;
+      // background-clip: text;
+      // -webkit-background-clip: text;
+    }
   }
-}
-.hrt_full {
   font-size: xx-large;
-  position: relative;
-  top: 20px;
 }
 
 //menu section
@@ -110,6 +113,7 @@ body {
       }
       &__price {
         font-weight: bold;
+        transition: all $transitiontime;
       }
     }
   }
