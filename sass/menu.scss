@@ -1,6 +1,7 @@
 body {
   background-color: $bg;
 }
+
 // arrow header
 .fa-arrow-left {
   position: relative;
@@ -35,19 +36,22 @@ body {
 .fa-stack {
   & :nth-child(2) {
     color: transparent;
-    font-size: xx-large;
     transition: all 150ms;
     padding: 0px;
     &:hover {
       color: $primary;
-      transform: scale(1.05);
+      transform: scale(1.03);
+      // (tentative pour linear gradient sur le coeur en hover)
       // background-color: linear-gradient($primary, $secondary);
       // background-color: red;
       // background-clip: text;
       // -webkit-background-clip: text;
+      // mix-blend-mode: ;
     }
   }
   font-size: xx-large;
+  position: relative;
+  bottom: 10px;
 }
 
 //menu section
@@ -98,6 +102,7 @@ body {
     flex-direction: column;
     text-overflow: ellipsis;
     overflow: hidden;
+    transition: all $transitiontime;
     &__description {
       flex: 100%;
       display: flex;
@@ -113,7 +118,6 @@ body {
       }
       &__price {
         font-weight: bold;
-        transition: all $transitiontime;
       }
     }
   }

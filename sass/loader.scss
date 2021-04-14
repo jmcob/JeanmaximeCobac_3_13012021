@@ -1,0 +1,27 @@
+#loader {
+  width: 100px;
+  height: 100px;
+  border: 20px solid #cccccc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top: 20px solid $primary;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top: 20px solid $secondary;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 20px solid $primary;
+  }
+}

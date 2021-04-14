@@ -32,16 +32,17 @@ body {
 
 .fa-stack {
   font-size: xx-large;
+  position: relative;
+  bottom: 10px;
 }
 .fa-stack :nth-child(2) {
   color: transparent;
-  font-size: xx-large;
   transition: all 150ms;
   padding: 0px;
 }
 .fa-stack :nth-child(2):hover {
   color: #9356dc;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .menu {
@@ -95,6 +96,7 @@ body {
   flex-direction: column;
   text-overflow: ellipsis;
   overflow: hidden;
+  transition: all 700ms;
 }
 .card__text__description {
   flex: 100%;
@@ -113,7 +115,6 @@ body {
 }
 .card__text__description__price {
   font-weight: bold;
-  transition: all 700ms;
 }
 .card__check {
   flex: 0%;
@@ -158,6 +159,34 @@ body {
   margin: 2rem;
 }
 
+#loader {
+  width: 100px;
+  height: 100px;
+  border: 20px solid #cccccc;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  margin: auto auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    border-top: 20px solid #9356dc;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-top: 20px solid #ff79da;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-top: 20px solid #9356dc;
+  }
+}
 * {
   box-sizing: border-box;
 }
