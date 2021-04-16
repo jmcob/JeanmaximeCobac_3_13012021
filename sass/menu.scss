@@ -36,17 +36,13 @@ body {
 .fa-stack {
   & :nth-child(2) {
     color: transparent;
-    transition: all 150ms;
+    transition: all 250ms;
     padding: 0px;
     &:hover {
-      color: $primary;
-      transform: scale(1.03);
-      // (tentative pour linear gradient sur le coeur en hover)
-      // background-color: linear-gradient($primary, $secondary);
-      // background-color: red;
-      // background-clip: text;
-      // -webkit-background-clip: text;
-      // mix-blend-mode: ;
+      background: linear-gradient(to bottom left, $primary, $secondary);
+      transform: scale(1.09);
+      background-clip: text;
+      -webkit-background-clip: text;
     }
   }
   font-size: xx-large;

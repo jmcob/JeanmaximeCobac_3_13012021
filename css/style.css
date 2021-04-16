@@ -37,12 +37,14 @@ body {
 }
 .fa-stack :nth-child(2) {
   color: transparent;
-  transition: all 150ms;
+  transition: all 250ms;
   padding: 0px;
 }
 .fa-stack :nth-child(2):hover {
-  color: #9356dc;
-  transform: scale(1.03);
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  transform: scale(1.09);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .menu {
@@ -159,12 +161,32 @@ body {
   margin: 2rem;
 }
 
-#loader {
+body {
+  animation-name: overflow;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+
+@keyframes overflow {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#loader__animation {
   width: 100px;
   height: 100px;
   border: 20px solid #cccccc;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-fill-mode: forwards;
   position: absolute;
   margin: auto auto;
   left: 0;
@@ -177,14 +199,17 @@ body {
   0% {
     transform: rotate(0deg);
     border-top: 20px solid #9356dc;
+    opacity: 1;
   }
   50% {
     transform: rotate(180deg);
     border-top: 20px solid #ff79da;
+    opacity: 0.9;
   }
   100% {
     transform: rotate(360deg);
     border-top: 20px solid #9356dc;
+    opacity: 0;
   }
 }
 * {
@@ -249,6 +274,10 @@ a:visited {
   margin-bottom: 7vw;
   box-shadow: 4px 4px 2px lightgrey;
   width: 60vw;
+}
+.btn:hover {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+  box-shadow: 8px 8px 2px #acabab;
 }
 
 .section_steps {

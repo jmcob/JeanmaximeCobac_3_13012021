@@ -1,9 +1,47 @@
-#loader {
+// #loader {
+//   animation-name: container;
+//   animation-duration: 1000ms;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: forwards;
+//   animation-delay: 0s;
+// }
+// @keyframes container {
+//   from {
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   to {
+//     width: 0vw;
+//     height: 0vh;
+//   }
+// }
+body {
+  animation-name: overflow;
+  // animation-direction: normal;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0s;
+}
+@keyframes overflow {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#loader__animation {
   width: 100px;
   height: 100px;
   border: 20px solid #cccccc;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-fill-mode: forwards;
   position: absolute;
   margin: auto auto;
   left: 0;
@@ -15,13 +53,16 @@
   0% {
     transform: rotate(0deg);
     border-top: 20px solid $primary;
+    opacity: 1;
   }
   50% {
     transform: rotate(180deg);
     border-top: 20px solid $secondary;
+    opacity: 0.9;
   }
   100% {
     transform: rotate(360deg);
     border-top: 20px solid $primary;
+    opacity: 0;
   }
 }
