@@ -81,6 +81,9 @@ body {
 
   margin-left: $main_margin;
 }
+.menu__carte_entrees {
+  @include card_appear;
+}
 .card {
   @include cardppty;
   margin: 1rem;

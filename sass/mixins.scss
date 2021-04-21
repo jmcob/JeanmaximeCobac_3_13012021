@@ -3,3 +3,15 @@
   box-shadow: 2px 2px 2px $shadow;
   border-radius: 20px 20px;
 }
+@mixin card_appear {
+  & :nth-child(n + 1) {
+    animation-name: appear;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+  }
+  @keyframes appear {
+    from {
+      transform: translateY(50px);
+    }
+  }
+} ;
