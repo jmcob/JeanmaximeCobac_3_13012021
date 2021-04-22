@@ -1,0 +1,223 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Shrikhand&display=swap");
+.header {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 5px 5px lightgrey;
+  margin-bottom: 5px;
+}
+.header img {
+  padding-bottom: 0px;
+  margin-bottom: -15px;
+}
+.header h1 {
+  margin-top: 5px;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 5vw;
+}
+.footer_h5 {
+  font-family: shrikhand, cursive;
+  font-size: larger;
+  margin-top: 0px;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: white;
+}
+
+.btn {
+  background: linear-gradient(170deg, #ff79da, #9356dc);
+  color: white;
+  font-size: large;
+  padding: 1rem;
+  border-radius: 50px;
+  border: none;
+  margin-bottom: 7vw;
+  box-shadow: 4px 4px 2px lightgrey;
+  width: 60vw;
+  transition: 250ms;
+}
+.btn:hover {
+  background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
+  box-shadow: 8px 8px 2px #acabab;
+}
+
+body {
+  background-color: #f6f6f6;
+  margin: 0px;
+  font-family: Roboto, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
+.fa-arrow-left {
+  position: relative;
+  top: 20px;
+  right: 45px;
+  font-size: x-large;
+}
+
+.restaurant img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.restaurant__name {
+  border-top-left-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+  transform: translateY(-80px);
+  margin-bottom: -80px;
+  padding: 5px 5vw;
+  background-color: #f6f6f6;
+  font-family: shrikhand, cursive;
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.fa-stack {
+  font-size: xx-large;
+  position: relative;
+  bottom: 10px;
+}
+.fa-stack :nth-child(2) {
+  color: transparent;
+  transition: all 250ms;
+  padding: 0px;
+}
+.fa-stack :nth-child(2):hover {
+  background: linear-gradient(to bottom left, #9356dc, #ff79da);
+  transform: scale(1.09);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0vw;
+}
+.menu h3 {
+  padding-bottom: 0px;
+  margin: 0 5vw;
+}
+.menu h4, .menu p {
+  padding: 0.25rem 5vw;
+}
+.menu h4 {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: larger;
+}
+.menu p {
+  margin-bottom: 5px;
+}
+
+.underline-h3 {
+  width: 40px;
+  height: 0.25em;
+  background-color: #99e2d0;
+  margin: 0;
+  padding: 0;
+  margin-left: 5vw;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 2px 2px 2px lightgrey;
+  border-radius: 20px 20px;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  transition: all 2000ms;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card__text {
+  display: flex;
+  flex: 100%;
+  white-space: nowrap;
+  /* interdiction de passer à la ligne */
+  flex-direction: column;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all 700ms;
+}
+.card__text__description {
+  flex: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__text__description p {
+  margin-top: 2px;
+  overflow: hidden;
+  white-space: nowrap;
+  /* interdiction de passer à la ligne */
+}
+.card__text__description__ingredients {
+  text-overflow: ellipsis;
+}
+.card__text__description__price {
+  font-weight: bold;
+}
+.card__check {
+  flex: 0%;
+  color: #f6f6f6;
+  background-color: #99e2d0;
+  font-size: xx-large;
+  text-align: center;
+  height: 2.1em;
+  /* hauteur du parent */
+  line-height: 2.1em;
+  /* hauteur de ligne (identique) */
+  white-space: nowrap;
+  /* interdiction de passer à la ligne */
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  transform: translateX(100px);
+  cursor: pointer;
+  transition: transform 700ms;
+}
+.card:hover > .card__check {
+  flex: 25%;
+  transform: translateX(0px);
+  background-color: #99e2d0;
+  cursor: pointer;
+  color: #f6f6f6;
+}
+.card:hover > .card__text {
+  flex: 75%;
+}
+.card:hover .fa-check-circle {
+  transform: rotate(0deg);
+}
+
+.fa-check-circle {
+  transform: rotate(359deg);
+  transition: transform 700ms;
+}
+
+.btn {
+  width: 200px;
+  align-self: center;
+  margin: 2rem;
+}
+
+/*# sourceMappingURL=menu.css.map */
