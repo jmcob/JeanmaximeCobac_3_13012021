@@ -1,0 +1,17 @@
+// coeur (far est vide, fas est plein)
+.fa-stack {
+  & :nth-child(2) {
+    color: transparent;
+    transition: all 250ms;
+    padding: 0px;
+    &:hover {
+      background: linear-gradient(to bottom left, $primary, $secondary);
+      transform: scale(1.09);
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
+  font-size: xx-large;
+  position: relative;
+  bottom: 10px;
+}
