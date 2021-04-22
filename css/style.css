@@ -228,6 +228,28 @@ a:visited {
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
 }
+.section_restaurants__card__img {
+  display: flex;
+  position: relative;
+}
+.section_restaurants__card__img__new {
+  font-weight: bold;
+  z-index: 1;
+  background-color: #99e2d0;
+  color: #1a8a68;
+  width: 80px;
+  display: block;
+  text-align: center;
+  right: 1em;
+  top: 1em;
+  position: absolute;
+  height: 2.5em;
+  /* hauteur du parent */
+  line-height: 0.7em;
+  /* hauteur de ligne (identique) */
+  white-space: nowrap;
+  /* interdiction de passer à la ligne */
+}
 .section_restaurants__card__caption {
   display: flex;
   justify-content: space-between;

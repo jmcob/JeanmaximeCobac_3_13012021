@@ -112,6 +112,26 @@ a {
       border-top-left-radius: 20px 20px;
       border-top-right-radius: 20px 20px;
     }
+    &__img {
+      display: flex;
+      position: relative;
+      &__new {
+        font-weight: bold;
+        z-index: 1;
+        background-color: $tertiary;
+        color: #1a8a68;
+        width: 80px;
+        display: block;
+        text-align: center;
+        right: 1em;
+        top: 1em;
+        position: absolute;
+        height: 2.5em; /* hauteur du parent */
+        line-height: 0.7em; /* hauteur de ligne (identique) */
+        white-space: nowrap; /* interdiction de passer à la ligne */
+        // transform: translate(-100px, 20px);
+      }
+    }
     &__caption {
       // description of restaurants
       display: flex;
