@@ -204,16 +204,14 @@ a:visited {
 .section_restaurants {
   padding: 0 5vw;
   background-color: #f6f6f6;
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
   align-items: center;
 }
 .section_restaurants__title {
   align-self: start;
 }
-.section_restaurants__card {
-  height: 150px;
+
+.card {
+  height: fit-content;
   flex: 100%;
   margin: 3vw 0px;
   background-color: white;
@@ -221,18 +219,17 @@ a:visited {
   box-shadow: 2px 2px 2px lightgrey;
   border-radius: 20px 20px;
 }
-.section_restaurants__card img {
+.card img {
   object-fit: cover;
   height: 150px;
   width: 90vw;
   border-top-left-radius: 20px 20px;
   border-top-right-radius: 20px 20px;
 }
-.section_restaurants__card__img {
-  display: flex;
+.card__img {
   position: relative;
 }
-.section_restaurants__card__img__new {
+.card__img__new {
   font-weight: bold;
   z-index: 1;
   background-color: #99e2d0;
@@ -250,26 +247,26 @@ a:visited {
   white-space: nowrap;
   /* interdiction de passer à la ligne */
 }
-.section_restaurants__card__caption {
+.card__caption {
   display: flex;
   justify-content: space-between;
   height: 65px;
 }
-.section_restaurants__card__caption__text {
+.card__caption__text {
   padding: 0 1rem;
   border-bottom-left-radius: 20px 20px;
   border-bottom-right-radius: 20px 20px;
 }
-.section_restaurants__card__caption__text p {
+.card__caption__text p {
   font-weight: lighter;
   margin-top: 0.2rem;
   margin-bottom: 0.6rem;
 }
-.section_restaurants__card__caption__text h4 {
+.card__caption__text h4 {
   margin-top: 0.6rem;
   margin-bottom: 0.2rem;
 }
-.section_restaurants__card__caption__hrt {
+.card__caption__hrt {
   padding: 0px;
   position: relative;
   bottom: 10px;

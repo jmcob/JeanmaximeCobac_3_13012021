@@ -90,72 +90,68 @@ a {
 .section_restaurants {
   padding: 0 $main_margin;
   background-color: $bg;
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
   align-items: center;
   //align title because of the justify content
   &__title {
     align-self: start;
   }
-  &__card {
+}
+.card {
+  height: fit-content;
+  flex: 100%;
+  margin: 3vw 0px;
+  background-color: $card_bg;
+  @include cardppty;
+  & img {
+    // card  img cover
+    object-fit: cover;
     height: 150px;
-    flex: 100%;
-    margin: 3vw 0px;
-    background-color: $card_bg;
-    @include cardppty;
-    & img {
-      // card  img cover
-      object-fit: cover;
-      height: 150px;
-      width: 90vw;
-      border-top-left-radius: 20px 20px;
-      border-top-right-radius: 20px 20px;
+    width: 90vw;
+    border-top-left-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+  }
+  &__img {
+    position: relative;
+    &__new {
+      font-weight: bold;
+      z-index: 1;
+      background-color: $tertiary;
+      color: #1a8a68;
+      width: 80px;
+      display: block;
+      text-align: center;
+      right: 1em;
+      top: 1em;
+      position: absolute;
+      height: 2.5em; /* hauteur du parent */
+      line-height: 0.7em; /* hauteur de ligne (identique) */
+      white-space: nowrap; /* interdiction de passer à la ligne */
+      // transform: translate(-100px, 20px);
     }
-    &__img {
-      display: flex;
+  }
+  &__caption {
+    // description of restaurants
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+    &__text {
+      padding: 0 1rem;
+      border-bottom-left-radius: 20px 20px;
+      border-bottom-right-radius: 20px 20px;
+      & p {
+        font-weight: lighter;
+        margin-top: 0.2rem;
+        margin-bottom: 0.6rem;
+      }
+      & h4 {
+        margin-top: 0.6rem;
+        margin-bottom: 0.2rem;
+      }
+    }
+    &__hrt {
+      padding: 0px;
       position: relative;
-      &__new {
-        font-weight: bold;
-        z-index: 1;
-        background-color: $tertiary;
-        color: #1a8a68;
-        width: 80px;
-        display: block;
-        text-align: center;
-        right: 1em;
-        top: 1em;
-        position: absolute;
-        height: 2.5em; /* hauteur du parent */
-        line-height: 0.7em; /* hauteur de ligne (identique) */
-        white-space: nowrap; /* interdiction de passer à la ligne */
-        // transform: translate(-100px, 20px);
-      }
-    }
-    &__caption {
-      // description of restaurants
-      display: flex;
-      justify-content: space-between;
-      height: 65px;
-      &__text {
-        padding: 0 1rem;
-        border-bottom-left-radius: 20px 20px;
-        border-bottom-right-radius: 20px 20px;
-        & p {
-          font-weight: lighter;
-          margin-top: 0.2rem;
-          margin-bottom: 0.6rem;
-        }
-        & h4 {
-          margin-top: 0.6rem;
-          margin-bottom: 0.2rem;
-        }
-      }
-      &__hrt {
-        padding: 0px;
-        position: relative;
-        bottom: 10px;
-      }
+      bottom: 10px;
     }
   }
 }
