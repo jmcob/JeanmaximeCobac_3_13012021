@@ -101,17 +101,20 @@ a {
   flex: 100%;
   margin: 3vw 0px;
   background-color: $card_bg;
+  display: flex;
+  width: 100%;
   @include cardppty;
   & img {
     // card  img cover
     object-fit: cover;
     height: 150px;
-    width: fit-content;
+    width: 90vw;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
   &__img {
     position: relative;
+    // width: 90%;
     &__new {
       font-weight: bold;
       z-index: 1;
