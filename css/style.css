@@ -221,16 +221,16 @@ a:visited {
   border-radius: 20px 20px;
   overflow: hidden;
 }
-.card img {
-  object-fit: cover;
-  height: 150px;
-  width: 90vw;
-  border-top-left-radius: 20px 20px;
-  border-top-right-radius: 20px 20px;
-}
 .card__img {
   position: relative;
   width: 90vw;
+}
+.card__img img {
+  object-fit: cover;
+  height: 180px;
+  width: 90vw;
+  border-top-left-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
 }
 .card__img__new {
   font-weight: bold;
