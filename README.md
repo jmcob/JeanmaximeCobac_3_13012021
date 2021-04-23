@@ -19,6 +19,11 @@ I had to focus on only one menu for this work, then copy paste the right names f
 
 There are several CSS transitions :
 
+### The "green check div"
+
+Here, on hover is applied a transform: translateX. A check logo also rotates 360deg before coming to its right place on hover in 700ms.
+When hover is off, the transition goes smoothly to its original place.
+
 ### The heart
 
 this line :
