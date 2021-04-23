@@ -102,14 +102,14 @@ a {
   margin: 3vw 0px;
   background-color: $card_bg;
   display: flex;
-  width: 100%;
   @include cardppty;
+  overflow: hidden;
+
   & img {
     // card  img cover
     object-fit: cover;
     height: 150px;
     width: 90vw;
-    overflow: hidden;
     border-top-left-radius: 20px 20px;
     border-top-right-radius: 20px 20px;
   }
