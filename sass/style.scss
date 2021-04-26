@@ -18,7 +18,10 @@ body {
   font-family: Roboto, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
-  background-color: $bg;
+  background-color: $hardbg;
+}
+.bg {
+  background: $bg;
 }
 
 a {
@@ -38,6 +41,7 @@ a {
 }
 // 2nd section ohmyfood presentation with big button
 .section_presentation {
+  overflow: hidden;
   padding: 0 $main_margin;
   display: flex;
   flex-flow: wrap column;
@@ -88,6 +92,27 @@ a {
 }
 .fa-store {
   color: $primary;
+}
+// media query for desktop for the last two sections
+@media screen and (min-width: $breakp1) {
+  .sectionflex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+  }
+  .section_presentation {
+    width: 50%;
+    align-items: flex-start;
+    text-align: start;
+    & h2 {
+      align-self: start;
+    }
+  }
+  .section_steps {
+    width: 50%;
+    background: linear-gradient(white, #eaeaea);
+  }
 }
 // biggest section : restaurants
 .section_restaurants {
@@ -162,15 +187,8 @@ a {
     }
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: $breakp1) {
   .section_restaurant__cards {
-    // display: grid;
-    // grid-template-columns: repeat(autofill, minmax(500px, 1fr));
-    // grid-template-rows: 1fr 1fr;
-    // gap: 1em 1em;
-    // grid-template-areas:
-    //   ". ."
-    //   ". .";
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -180,5 +198,8 @@ a {
     max-width: 500px;
     margin: 2rem;
     margin-bottom: 3rem;
+    &__img {
+      max-width: 500px;
+    }
   }
 }
