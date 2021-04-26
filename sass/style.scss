@@ -16,6 +16,9 @@
 body {
   margin: 0px;
   font-family: Roboto, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: $bg;
 }
 
 a {
@@ -157,5 +160,25 @@ a {
       position: relative;
       bottom: 10px;
     }
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section_restaurant__cards {
+    // display: grid;
+    // grid-template-columns: repeat(autofill, minmax(500px, 1fr));
+    // grid-template-rows: 1fr 1fr;
+    // gap: 1em 1em;
+    // grid-template-areas:
+    //   ". ."
+    //   ". .";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .card {
+    max-width: 500px;
+    margin: 2rem;
+    margin-bottom: 3rem;
   }
 }

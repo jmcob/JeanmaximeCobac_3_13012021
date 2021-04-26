@@ -70,6 +70,8 @@ body {
   background-color: #f6f6f6;
   margin: 0px;
   font-family: Roboto, sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 a {
@@ -275,6 +277,21 @@ a:visited {
   width: 200px;
   align-self: center;
   margin: 2rem;
+}
+
+@media screen and (min-width: 900px) {
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .menu :nth-child(2) {
+    border: 2px solid transparent;
+  }
+
+  .card {
+    max-width: 350px;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */
