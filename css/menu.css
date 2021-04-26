@@ -58,22 +58,27 @@
 }
 .fa-stack :nth-child(2) {
   color: transparent;
-  transition: all 250ms;
+  transition: all 850ms;
   padding: 0px;
 }
 .fa-stack :nth-child(2):hover {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
-  transform: scale(1.09);
+  font-size: small;
+  transform: scale(3);
   background-clip: text;
   -webkit-background-clip: text;
 }
 
 body {
-  background-color: #f6f6f6;
+  background-color: #555;
   margin: 0px;
   font-family: Roboto, sans-serif;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.bg {
+  background-color: #f6f6f6;
 }
 
 a {

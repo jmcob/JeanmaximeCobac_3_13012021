@@ -2,12 +2,13 @@
 $primary: #9356dc;
 $secondary: #ff79da;
 $tertiary: #99e2d0;
-$shadow: lightgrey;
-$darkshadow: rgb(172, 171, 171);
-$bg: #f6f6f6;
-$hardbg: #555;
+$shadow: lightgrey; // shadow btn
+$darkshadow: rgb(172, 171, 171); // shadow hover btn
+$bg: #f6f6f6; // page bg
+$hardbg: #555; // bg for desktop
 $card_bg: white;
+$bgnew: #1a8a68; // bg for the "nouveau" tag
 // autres variables
 $main_margin: 5vw; // sur toutes les pages
-$transitiontime: 700ms;
-$breakp1: 1280px;
+$transitiontime: 700ms; // sur la transition du check
+$breakp1: 1280px; // pour la version desktop
