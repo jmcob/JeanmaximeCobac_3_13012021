@@ -293,16 +293,30 @@ a:visited {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
-  .menu :nth-child(2) {
-    border: 2px solid transparent;
+  .menu h3 {
+    margin: 0 1rem;
+  }
+  .menu h4, .menu p {
+    padding: 0.25rem 1rem;
+  }
+
+  .underline-h3 {
+    margin-left: 1rem;
   }
 
   .card {
     max-width: 310px;
-    justify-items: space-between;
   }
   .card__text {
     padding: 0px;
+  }
+  .card__check {
+    height: 70px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card {
+    max-width: 400px;
   }
 }
 
