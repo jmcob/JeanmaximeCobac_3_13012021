@@ -7,6 +7,7 @@
 @import "btn.scss"; // pour le bouton
 @import "heart.scss"; // pour le coeur
 
+// backgrounds for the desktop, wrapper and fonts
 body {
   background-color: $hardbg; // pour le desktop
   margin: 0px;
@@ -101,6 +102,8 @@ a {
     animation-delay: 1s;
   }
 }
+
+// ine the menu section : .card
 .card {
   @include cardppty;
   margin: 1rem;
@@ -137,6 +140,7 @@ a {
       }
     }
   }
+  // check animation in .card
   &__check {
     flex: 0%;
     color: $bg;
@@ -172,12 +176,14 @@ a {
   transform: rotate(359deg);
   transition: transform $transitiontime;
 }
-
+// ajout btn par rapport au fichier btn.scss
 .btn {
   width: 200px;
   align-self: center;
   margin: 2rem;
 }
+
+// Media queries for these menu pages
 @media screen and (min-width: 1024px) {
   .menu {
     display: grid;
