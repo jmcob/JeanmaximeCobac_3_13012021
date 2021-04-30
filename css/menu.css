@@ -55,6 +55,7 @@
   font-size: xx-large;
   position: relative;
   bottom: 10px;
+  cursor: pointer;
 }
 .fa-stack :nth-child(2) {
   color: transparent;
