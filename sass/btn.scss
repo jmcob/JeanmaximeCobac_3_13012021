@@ -11,6 +11,8 @@
   max-width: 250px;
   align-self: center;
   transition: 250ms;
+  cursor: pointer;
+
   &:hover {
     background: linear-gradient(
       170deg,

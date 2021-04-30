@@ -45,6 +45,7 @@
   max-width: 250px;
   align-self: center;
   transition: 250ms;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(170deg, rgba(255, 121, 218, 0.8) 0%, rgba(214, 108, 219, 0.8) 39%, rgba(171, 94, 220, 0.8) 85%, rgba(155, 89, 220, 0.8) 100%);
