@@ -147,7 +147,6 @@ a:visited {
 
 .menu__carte_entrees .card {
   animation-name: appear;
-  animation-fill-mode: forwards;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
 }
@@ -164,7 +163,6 @@ a:visited {
 
 .menu__carte_plats .card {
   animation-name: appear;
-  animation-fill-mode: forwards;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
 }
@@ -184,7 +182,6 @@ a:visited {
 
 .menu__carte_desserts .card {
   animation-name: appear;
-  animation-fill-mode: forwards;
   animation-duration: 1000ms;
   animation-fill-mode: backwards;
 }

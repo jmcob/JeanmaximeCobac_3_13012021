@@ -9,7 +9,6 @@
 @mixin card_appear {
   & .card {
     animation-name: appear;
-    animation-fill-mode: forwards;
     animation-duration: 1000ms;
     animation-fill-mode: backwards;
   }

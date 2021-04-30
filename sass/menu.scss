@@ -87,6 +87,7 @@ a {
 
   margin-left: $main_margin;
 }
+// Decalage manuel pour apparition du menu mixin appear
 .menu__carte_entrees {
   @include card_appear;
 }
