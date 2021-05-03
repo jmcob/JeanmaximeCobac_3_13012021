@@ -4,7 +4,7 @@ header,
 main,
 footer {
   animation-name: opacity;
-  animation-duration: 5000ms;
+  animation-duration: 3000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0s;
@@ -123,8 +123,8 @@ footer {
   background: linear-gradient(to bottom left, #9356dc, #ff79da);
   font-size: small;
   transform: scale(3);
-  background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
 * {

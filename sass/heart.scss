@@ -12,8 +12,8 @@
       background: linear-gradient(to bottom left, $primary, $secondary);
       font-size: small;
       transform: scale(3);
-      background-clip: text;
       -webkit-background-clip: text;
+      -moz-background-clip: text;
     }
   }
 }
