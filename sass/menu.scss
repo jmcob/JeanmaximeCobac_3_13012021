@@ -185,7 +185,7 @@ a {
 }
 
 // Media queries for these menu pages
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: $breakp1) {
   .menu {
     display: grid;
 
