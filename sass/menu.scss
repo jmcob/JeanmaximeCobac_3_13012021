@@ -70,6 +70,10 @@ a {
     margin-bottom: 0px;
     margin-top: 0px;
     font-size: larger;
+    // pour mettre trois points de suspension si c'est nécéssaire : 3 lignes CSS
+    white-space: nowrap; /* interdiction de passer à la ligne */
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
   & p {
     margin-bottom: 5px;

@@ -133,6 +133,10 @@ a:visited {
   margin-bottom: 0px;
   margin-top: 0px;
   font-size: larger;
+  white-space: nowrap;
+  /* interdiction de passer à la ligne */
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu p {
   margin-bottom: 5px;
