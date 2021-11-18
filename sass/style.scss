@@ -133,6 +133,7 @@ a {
   @include cardppty;
   overflow: hidden;
   width: 90vw;
+  padding: f0px;
   &__img {
     position: relative;
     width: 90vw;
@@ -197,7 +198,7 @@ a {
   }
   .card {
     max-width: 500px;
-    margin: 2rem;
+    margin: 1rem;
     margin-bottom: 3rem;
     &__img {
       max-width: 500px;

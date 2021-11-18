@@ -21,7 +21,7 @@ footer {
 #loader__animation {
   width: 100px;
   height: 100px;
-  border: 20px solid #cccccc;
+  border: 10px solid #cccccc;
   border-radius: 50%;
   animation-name: spin;
   animation-duration: 2s;
@@ -258,6 +258,7 @@ a:visited {
   height: fit-content;
   overflow: hidden;
   width: 90vw;
+  padding: f0px;
 }
 .card__img {
   position: relative;
@@ -323,7 +324,7 @@ a:visited {
 
   .card {
     max-width: 500px;
-    margin: 2rem;
+    margin: 1rem;
     margin-bottom: 3rem;
   }
   .card__img {
