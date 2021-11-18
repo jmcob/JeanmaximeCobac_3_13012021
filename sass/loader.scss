@@ -7,6 +7,7 @@ footer {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0s;
+  animation-timing-function: cubic-bezier(1, -0.25, 0.93, 0.59);
 }
 @keyframes opacity {
   from {
@@ -18,14 +19,14 @@ footer {
 }
 
 #loader__animation {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border: 10px solid #cccccc;
   border-radius: 50%;
   animation-name: spin;
-  animation-duration: 2s;
+  animation-duration: 2.7s;
   animation-iteration-count: 1;
-  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
   animation-fill-mode: forwards;
   position: absolute;
   margin: auto auto;
@@ -33,24 +34,31 @@ footer {
   right: 0;
   top: 0;
   bottom: 0;
+  box-shadow: 5px 10px $tertiary, 60px -16px $darkshadow;
 }
 @keyframes spin {
   0% {
     transform: rotate(0deg);
-    border-top: 20px solid $primary;
+    border-top: 30px solid $primary;
     opacity: 1;
+    box-shadow: 5px 40px $tertiary, 60px -16px $darkshadow;
   }
   50% {
-    transform: rotate(180deg);
-    border-top: 20px solid $secondary;
-    opacity: 0.9;
+    transform: rotate(360deg);
+    border-top: 40px solid $secondary;
+    opacity: 0.95;
+    box-shadow: 15px 10px $tertiary, 20px -16px $darkshadow;
   }
   75% {
-    opacity: 0.8;
+    transform: rotate(540deg);
+    opacity: 0.9;
+    box-shadow: 5px 10px $tertiary, -20px 16px $darkshadow;
   }
+
   100% {
-    transform: rotate(360deg);
-    border-top: 20px solid $primary;
+    transform: rotate(720deg);
+    border-top: 50px solid $primary;
     opacity: 0;
+    box-shadow: 25px 35px $tertiary, 10px 26px $darkshadow;
   }
 }
