@@ -4,7 +4,7 @@ header,
 main,
 footer {
   animation-name: opacity;
-  animation-duration: 3000ms;
+  animation-duration: 2500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0s;
@@ -25,7 +25,7 @@ footer {
   border: 10px solid #cccccc;
   border-radius: 50%;
   animation-name: spin;
-  animation-duration: 2.7s;
+  animation-duration: 2.2s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.35, 0.36, 0.72, 0.72);
   animation-fill-mode: forwards;
@@ -50,13 +50,21 @@ footer {
     border-top: 40px solid #ff79da;
     opacity: 0.95;
     box-shadow: 15px 10px #99e2d0, 20px -16px #acabab;
+    border-radius: 50%;
+  }
+  74% {
+    border-radius: 30%;
   }
   75% {
     transform: rotate(540deg);
     opacity: 0.9;
     box-shadow: 5px 10px #99e2d0, -20px 16px #acabab;
   }
+  85% {
+    border-radius: 50%;
+  }
   100% {
+    border-radius: 50%;
     transform: rotate(720deg);
     border-top: 50px solid #9356dc;
     opacity: 0;
